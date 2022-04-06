@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SearchResultFragment">
+
+    <fragment
+        android:id="@+id/SearchResultFragment"
+        android:name="com.hj.flickrviewer.view.SearchResultFragment"
+        android:label="@string/search_result_fragment_label"
+        tools:layout="@layout/fragment_search_result">
+
+        <action
+            android:id="@+id/action_SearchResultFragment_to_PhotoFragment"
+            app:destination="@id/PhotoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SearchFragment"
+        android:name="com.hj.flickrviewer.view.SearchFragment"
+        android:label="@string/search_fragment_label"
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_SearchFragment_to_SearchResultFragment"
+            app:destination="@id/SearchResultFragment"
+            app:popUpTo="@id/SearchResultFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/PhotoFragment"
+        android:name="com.hj.flickrviewer.view.PhotoFragment"
+        android:label="@string/photo_fragment_label"
+        tools:layout="@layout/fragment_photo">
+
+    </fragment>
+    <fragment
+        android:id="@+id/BookmarkFragment"
+        android:name="com.hj.flickrviewer.view.BookmarkFragment"
+        android:label="@string/bookmark_fragment_label"
+        tools:layout="@layout/fragment_bookmark">
+
+        <action
+            android:id="@+id/action_BookmarkFragment_to_PhotoFragment"
+            app:destination="@id/PhotoFragment" />
+    </fragment>
+</navigation>

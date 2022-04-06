@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FlickrViewer</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="search_result_fragment_label">Search Result</string>
+    <string name="search_fragment_label">Search</string>
+    <string name="photo_fragment_label">Photo</string>
+    <string name="bookmark_fragment_label">Bookmark</string>
+    <string name="menu_bottom_navigation_title_1">Search</string>
+    <string name="menu_bottom_navigation_title_2">Bookmark</string>
+    <string name="menu_search_result_title">Search Result</string>
+    <string name="menu_search_title">Search</string>
+    <string name="menu_photo_title">Bookmark</string>
+    <string name="search_hint">Search</string>
+    <string name="no_search_result_text">No contents to display</string>
+
+</resources>
