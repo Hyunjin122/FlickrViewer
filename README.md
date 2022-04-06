@@ -10,7 +10,7 @@ Display photos from the Flickr API server.
 - Bookmark to Save and delete photos in local storage.
 - Load photos from local storage when there is no network connection.
 
-<img src="img/flickrviewer.gif" width="50%">
+<img src="img/flickrviewer.gif" width="25%">
 
 ## Skills
 - MVVM Architecture Pattern
